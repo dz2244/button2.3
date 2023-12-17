@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         counter++;
         btn = findViewById(R.id.btn);
         btn.setText("This is a click number:" + counter);
-
+        if (counter%7 == 0)
+            btn.setText("BOOM KABOOM!!!");
         
     }
 }
